@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neno Evangelism Centre | Sasa TV Gospel Network</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind Configuration Script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#1e1035',
+                            darkPurple: '#130a24',
+                            lightPurple: '#2d1850',
+                            gold: '#d4af37',
+                            goldHover: '#b89428',
+                            accent: '#38bdf8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased selection:bg-amber-500 selection:text-gray-950">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-brand-darkPurple/90 backdrop-blur-md border-b border-purple-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <img src="assets/images/logo.jpg" alt="Neno Evangelism Centre Logo" class="h-12 w-auto object-contain drop-shadow-md rounded-full border border-amber-500/30">
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-white block leading-tight">Neno Evangelism</span>
+                    <span class="text-xs text-amber-400 tracking-wider uppercase">Sasa TV Gospel Network</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="text-gray-300 hover:text-amber-400 transition">About Us</a>
+                <a href="#sasa-tv" class="text-gray-300 hover:text-amber-400 transition">Sasa TV Live</a>
+                <a href="#sermons" class="text-gray-300 hover:text-amber-400 transition">Sermons</a>
+                <a href="#branches" class="text-gray-300 hover:text-amber-400 transition">Branches</a>
+                <a href="#giving" class="text-gray-300 hover:text-amber-400 transition">Giving</a>
+                <a href="#prayer" class="text-gray-300 hover:text-amber-400 transition">Prayer Line</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#giving" class="bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-brand-darkPurple font-semibold px-5 py-2.5 rounded-full shadow-md transition transform hover:-translate-y-0.5">
+                    Give Online
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-darkPurple/95 border-b border-purple-900/50 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-gray-200 hover:text-amber-400">About Us</a>
+            <a href="#sasa-tv" class="block py-2 text-gray-200 hover:text-amber-400">Sasa TV Live</a>
+            <a href="#sermons" class="block py-2 text-gray-200 hover:text-amber-400">Sermons</a>
+            <a href="#branches" class="block py-2 text-gray-200 hover:text-amber-400">Branches</a>
+            <a href="#giving" class="block py-2 text-gray-200 hover:text-amber-400">Giving</a>
+            <a href="#prayer" class="block py-2 text-gray-200 hover:text-amber-400">Prayer Line</a>
+            <a href="#giving" class="inline-block w-full text-center bg-amber-500 text-brand-darkPurple font-semibold py-2.5 rounded-full mt-2">
+                Give Online
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Full Visibility Background Slideshow -->
+    <section class="relative min-h-[85vh] flex items-center py-20 overflow-hidden">
+        <!-- 19 Hero Images Slideshow Container -->
+        <div id="hero-slideshow" class="absolute inset-0 z-0">
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('assets/images/hero-1.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-2.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-3.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-4.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-5.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-6.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-7.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-8.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-9.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-10.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-11.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-12.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-13.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-14.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-15.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-16.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-17.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-18.jpg');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/images/hero-19.jpg');"></div>
+        </div>
+
+        <!-- Subtle Left Gradient Shadow for Text Contrast -->
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/70 to-transparent z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-black/40 z-10"></div>
+
+        <!-- Left-Aligned Content -->
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 w-full">
+            <div class="max-w-2xl text-left">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-sm">
+                    "What God Can Do, No Man Can Do"
+                </span>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold font-serif text-white tracking-tight leading-tight mb-6 drop-shadow-2xl">
+                    Transforming Lives Through <span class="gold-gradient-text">the Power of Faith</span>
+                </h1>
+                <p class="text-lg text-gray-200 mb-8 leading-relaxed drop-shadow">
+                    Join Apostle Dr. James Maina Ng'ang'a and the Neno Evangelism family live on Sasa TV for powerful preaching, deliverance, and worship.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <a href="#sasa-tv" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-amber-500 hover:bg-amber-400 text-brand-darkPurple font-bold px-8 py-3.5 rounded-full text-base shadow-xl shadow-amber-500/20 transition transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-circle-play text-lg"></i>
+                        <span>Watch Sasa TV Live</span>
+                    </a>
+                    <a href="#prayer" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-black/40 hover:bg-black/60 text-white font-medium px-8 py-3.5 rounded-full border border-white/20 backdrop-blur-sm transition">
+                        <span>Submit Prayer Request</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-950 border-t border-purple-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full">About Our Ministry</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-4 mb-6">Proclaiming the Word of Power & Deliverance</h2>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Neno Evangelism Centre was founded by <strong>Apostle Dr. James Maina Ng'ang'a</strong> with a core mission: to preach the uncompromised gospel of Jesus Christ, bring healing to the brokenhearted, and set captives free through power and deliverance.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed mb-8">
+                        Through <strong>Sasa TV Network</strong>, the ministry reaches millions of homes across Kenya and globally with daily live services, intercessory prayer lines, and healing crusades.
+                    </p>
+                    
+                    <div class="grid sm:grid-cols-3 gap-4 border-t border-purple-900/50 pt-6">
+                        <div class="bg-brand-purple/40 p-4 rounded-xl border border-purple-800/30 text-center">
+                            <span class="text-2xl font-bold text-amber-400 block">100K+</span>
+                            <span class="text-xs text-gray-400">Weekly Viewers</span>
+                        </div>
+                        <div class="bg-brand-purple/40 p-4 rounded-xl border border-purple-800/30 text-center">
+                            <span class="text-2xl font-bold text-amber-400 block">50+</span>
+                            <span class="text-xs text-gray-400">Church Branches</span>
+                        </div>
+                        <div class="bg-brand-purple/40 p-4 rounded-xl border border-purple-800/30 text-center">
+                            <span class="text-2xl font-bold text-amber-400 block">24/7</span>
+                            <span class="text-xs text-gray-400">Sasa TV Stream</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative rounded-2xl overflow-hidden border border-purple-800/40 shadow-2xl bg-brand-purple/50 p-8">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="assets/images/logo.jpg" alt="Apostle Dr. James Maina Ng'ang'a" class="w-16 h-16 rounded-full border-2 border-amber-400 object-cover">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Apostle Dr. James Maina Ng'ang'a</h3>
+                            <p class="text-xs text-amber-400">Senior Pastor & Founder</p>
+                        </div>
+                    </div>
+                    <blockquote class="italic text-gray-300 border-l-4 border-amber-400 pl-4 py-2 mb-6">
+                        "What God can do, no man can do. Stand firm in faith and witness God break every yoke in your life."
+                    </blockquote>
+                    <a href="#prayer" class="inline-flex items-center space-x-2 text-amber-400 hover:text-amber-300 text-sm font-semibold">
+                        <span>Connect with Apostle's Office</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sasa TV Live Section -->
+    <section id="sasa-tv" class="py-20 bg-gray-900 border-t border-purple-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center space-x-2 bg-red-500/10 border border-red-500/30 px-4 py-1.5 rounded-full mb-3">
+                    <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
+                    <span class="text-xs font-bold uppercase tracking-widest text-red-400">Sasa TV Live Broadcast</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">Live Service & Gospel Stream</h2>
+                <p class="text-gray-400 max-w-xl mx-auto">Broadcasting live services, deliverance prayers, and crusade sessions from Neno Evangelism Centre Nairobi HQ.</p>
+            </div>
+
+            <!-- Reliable Live Broadcast Player Hub -->
+            <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-purple-800/50 bg-gradient-to-b from-brand-purple to-gray-950 p-6 sm:p-10 relative">
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <!-- Live Thumbnail & Player Launch Area -->
+                    <div class="md:col-span-7 relative group rounded-2xl overflow-hidden border border-amber-500/30 shadow-xl aspect-video bg-cover bg-center flex items-center justify-center" style="background-image: url('assets/images/hero-2.jpg');">
+                        <div class="absolute inset-0 bg-brand-darkPurple/70 group-hover:bg-brand-darkPurple/50 transition"></div>
+                        
+                        <!-- Pulse Ring & Play Button -->
+                        <a href="https://www.youtube.com/@sasatvgospel2024/live" target="_blank" class="relative z-10 flex flex-col items-center group-hover:scale-105 transition transform">
+                            <div class="w-20 h-20 rounded-full bg-red-600 text-white flex items-center justify-center text-3xl shadow-2xl shadow-red-600/50 mb-3 border-2 border-white/40">
+                                <i class="fa-solid fa-play ml-1"></i>
+                            </div>
+                            <span class="bg-black/70 text-amber-300 text-xs font-bold px-4 py-1.5 rounded-full border border-amber-500/40 backdrop-blur-md">
+                                Tap to Watch Sasa TV Live
+                            </span>
+                        </a>
+
+                        <div class="absolute top-3 left-3 bg-red-600 text-white text-[10px] font-bold uppercase px-2.5 py-1 rounded-md tracking-wider flex items-center space-x-1">
+                            <i class="fa-solid fa-signal text-[9px]"></i>
+                            <span>LIVE NOW</span>
+                        </div>
+                    </div>
+
+                    <!-- Live Schedule & Broadcast Status -->
+                    <div class="md:col-span-5 text-left space-y-4">
+                        <span class="text-amber-400 text-xs font-bold uppercase tracking-widest block">Broadcast Schedule</span>
+                        <h3 class="text-2xl font-bold font-serif text-white">Neno Evangelism Live Services</h3>
+                        
+                        <ul class="space-y-3 text-xs text-gray-300 border-t border-purple-900/60 pt-4">
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-calendar-day text-amber-400 mt-0.5"></i>
+                                <span><strong>Sunday Main Service:</strong> 8:00 AM - 1:00 PM EAT</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-fire text-amber-400 mt-0.5"></i>
+                                <span><strong>Thursday Deliverance:</strong> 10:00 AM - 3:00 PM EAT</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <i class="fa-solid fa-moon text-amber-400 mt-0.5"></i>
+                                <span><strong>Friday Kesha Night:</strong> 10:00 PM - 5:00 AM EAT</span>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2">
+                            <a href="https://www.youtube.com/@sasatvgospel2024/live" target="_blank" class="w-full inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl text-sm shadow-lg shadow-red-600/30 transition">
+                                <i class="fa-brands fa-youtube text-lg"></i>
+                                <span>Launch Sasa TV Live Stream</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alternative Direct Channel Link Badge -->
+            <div class="mt-8 text-center">
+                <a href="https://www.youtube.com/@sasatvgospel2024" target="_blank" class="inline-flex items-center space-x-2 text-sm text-amber-400 hover:text-amber-300 font-medium bg-purple-950/60 border border-purple-800/50 px-6 py-2.5 rounded-full transition">
+                    <i class="fa-brands fa-youtube text-red-500 text-lg"></i>
+                    <span>Visit Official SASA TV GOSPEL YouTube Channel</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sermons & Ministry Pillars Archive Section -->
+    <section id="sermons" class="py-20 bg-gray-950 border-t border-purple-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full">Ministry Highlights & Media</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-3 mb-4">Sermons, Crusades & Anointing Services</h2>
+                <p class="text-gray-400 max-w-xl mx-auto">Explore recent teachings, powerful crusades, deliverance sessions, and pastoral ordination broadcasts on Sasa TV.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Sunday Service Card -->
+                <div class="bg-brand-darkPurple/80 rounded-2xl overflow-hidden border border-purple-900/50 hover:border-amber-500/50 transition flex flex-col group">
+                    <div class="relative bg-cover bg-center aspect-video flex items-center justify-center" style="background-image: url('assets/images/hero-1.jpg');">
+                        <div class="absolute inset-0 bg-brand-darkPurple/60 group-hover:bg-brand-darkPurple/40 transition"></div>
+                        <a href="https://www.youtube.com/@sasatvgospel2024/videos" target="_blank" class="relative z-10 w-16 h-16 rounded-full bg-amber-500 hover:bg-amber-400 text-brand-darkPurple flex items-center justify-center text-2xl shadow-xl transition transform group-hover:scale-110">
+                            <i class="fa-solid fa-play ml-1"></i>
+                        </a>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <i class="fa-solid fa-church text-amber-400 text-sm"></i>
+                                <span class="text-xs text-amber-400 font-semibold uppercase tracking-wider">Sunday Main Service</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Sunday Worship & Word</h3>
+                            <p class="text-sm text-gray-400 mb-4">Apostle Dr. James Maina Ng'ang'a delivers transformative Sunday worship messages and word of faith.</p>
+                        </div>
+                        <a href="https://www.youtube.com/@sasatvgospel2024/videos" target="_blank" class="flex items-center justify-between text-xs text-amber-400 font-semibold border-t border-purple-900/50 pt-4 hover:underline">
+                            <span>Watch Latest Sunday Service</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Crusades & Deliverance Card -->
+                <div class="bg-brand-darkPurple/80 rounded-2xl overflow-hidden border border-purple-900/50 hover:border-amber-500/50 transition flex flex-col group">
+                    <div class="relative bg-cover bg-center aspect-video flex items-center justify-center" style="background-image: url('assets/images/hero-3.jpg');">
+                        <div class="absolute inset-0 bg-brand-darkPurple/60 group-hover:bg-brand-darkPurple/40 transition"></div>
+                        <a href="https://www.youtube.com/@sasatvgospel2024/streams" target="_blank" class="relative z-10 w-16 h-16 rounded-full bg-amber-500 hover:bg-amber-400 text-brand-darkPurple flex items-center justify-center text-2xl shadow-xl transition transform group-hover:scale-110">
+                            <i class="fa-solid fa-play ml-1"></i>
+                        </a>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <i class="fa-solid fa-fire text-amber-400 text-sm"></i>
+                                <span class="text-xs text-amber-400 font-semibold uppercase tracking-wider">Crusade & Deliverance</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Power Crusades & Miracles</h3>
+                            <p class="text-sm text-gray-400 mb-4">Experience deliverance, prophetic warfare, and miracle healing prayer sessions from public crusades.</p>
+                        </div>
+                        <a href="https://www.youtube.com/@sasatvgospel2024/streams" target="_blank" class="flex items-center justify-between text-xs text-amber-400 font-semibold border-t border-purple-900/50 pt-4 hover:underline">
+                            <span>Watch Deliverance Services</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pastoral Anointing Card -->
+                <div class="bg-brand-darkPurple/80 rounded-2xl overflow-hidden border border-purple-900/50 hover:border-amber-500/50 transition flex flex-col group">
+                    <div class="relative bg-cover bg-center aspect-video flex items-center justify-center" style="background-image: url('assets/images/hero-5.jpg');">
+                        <div class="absolute inset-0 bg-brand-darkPurple/60 group-hover:bg-brand-darkPurple/40 transition"></div>
+                        <a href="https://www.youtube.com/@sasatvgospel2024/videos" target="_blank" class="relative z-10 w-16 h-16 rounded-full bg-amber-500 hover:bg-amber-400 text-brand-darkPurple flex items-center justify-center text-2xl shadow-xl transition transform group-hover:scale-110">
+                            <i class="fa-solid fa-play ml-1"></i>
+                        </a>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <i class="fa-solid fa-hands-praying text-amber-400 text-sm"></i>
+                                <span class="text-xs text-amber-400 font-semibold uppercase tracking-wider">Anointing & Ordination</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Pastoral Anointing & Laying of Hands</h3>
+                            <p class="text-sm text-gray-400 mb-4">Special ordination services, oil of covenant anointing, and spiritual commissionings.</p>
+                        </div>
+                        <a href="https://www.youtube.com/@sasatvgospel2024/videos" target="_blank" class="flex items-center justify-between text-xs text-amber-400 font-semibold border-t border-purple-900/50 pt-4 hover:underline">
+                            <span>Watch Anointing Broadcasts</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section id="branches" class="py-20 bg-brand-darkPurple border-t border-purple-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full">Church Network</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-3 mb-4">Find a Neno Branch Near You</h2>
+                <p class="text-gray-400 max-w-xl mx-auto">Fellowship with us at any of our primary sanctuary branches across Kenya.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Branch 1: Nairobi HQ -->
+                <div class="glass-card p-6 rounded-2xl border border-purple-800/40 relative hover:border-amber-500/50 transition">
+                    <span class="text-[10px] uppercase font-bold text-amber-400 bg-amber-500/20 px-2.5 py-0.5 rounded-full mb-3 inline-block">Main Headquarters</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Nairobi HQ</h3>
+                    <p class="text-xs text-gray-400 mb-4"><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i> Junction of Uhuru Highway & Haile Selassie Avenue, Nairobi CBD</p>
+                    <div class="space-y-2 text-xs text-gray-300 mb-6">
+                        <p><strong>Sunday Service:</strong> 8:00 AM - 1:00 PM</p>
+                        <p><strong>Thursday Deliverance:</strong> 10:00 AM</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="inline-block w-full text-center py-2 bg-purple-900/50 hover:bg-purple-800/60 text-amber-400 text-xs font-semibold rounded-lg border border-purple-700/50 transition">Get Directions</a>
+                </div>
+
+                <!-- Branch 2: Mombasa (First Sanctuary) -->
+                <div class="glass-card p-6 rounded-2xl border border-purple-800/40 relative hover:border-amber-500/50 transition">
+                    <span class="text-[10px] uppercase font-bold text-amber-400 bg-amber-500/20 px-2.5 py-0.5 rounded-full mb-3 inline-block">1st Sanctuary / Foundation</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Mombasa Branch</h3>
+                    <p class="text-xs text-gray-400 mb-4"><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i> Lotus Plaza 1st Floor, Nkrumah Lane (Opp. ACK Cathedral), Mombasa</p>
+                    <div class="space-y-2 text-xs text-gray-300 mb-6">
+                        <p><strong>Sunday Service:</strong> 8:30 AM - 12:30 PM</p>
+                        <p><strong>Midweek Fellowship:</strong> Wednesday 4:00 PM</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="inline-block w-full text-center py-2 bg-purple-900/50 hover:bg-purple-800/60 text-amber-400 text-xs font-semibold rounded-lg border border-purple-700/50 transition">Get Directions</a>
+                </div>
+
+                <!-- Branch 3: Thika Branch -->
+                <div class="glass-card p-6 rounded-2xl border border-purple-800/40 relative hover:border-amber-500/50 transition">
+                    <span class="text-[10px] uppercase font-bold text-gray-400 bg-gray-800 px-2.5 py-0.5 rounded-full mb-3 inline-block">Kiambu Region</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Thika Branch</h3>
+                    <p class="text-xs text-gray-400 mb-4"><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i> Thika Town Centre, Near Commercial Area</p>
+                    <div class="space-y-2 text-xs text-gray-300 mb-6">
+                        <p><strong>Sunday Service:</strong> 9:00 AM - 12:30 PM</p>
+                        <p><strong>Friday Prayer:</strong> 5:00 PM</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="inline-block w-full text-center py-2 bg-purple-900/50 hover:bg-purple-800/60 text-amber-400 text-xs font-semibold rounded-lg border border-purple-700/50 transition">Get Directions</a>
+                </div>
+
+                <!-- Branch 4: Kisumu Branch -->
+                <div class="glass-card p-6 rounded-2xl border border-purple-800/40 relative hover:border-amber-500/50 transition">
+                    <span class="text-[10px] uppercase font-bold text-gray-400 bg-gray-800 px-2.5 py-0.5 rounded-full mb-3 inline-block">Nyanza Region</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Kisumu Branch</h3>
+                    <p class="text-xs text-gray-400 mb-4"><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i> Kisumu CBD, Off Kisumu Road</p>
+                    <div class="space-y-2 text-xs text-gray-300 mb-6">
+                        <p><strong>Sunday Service:</strong> 9:00 AM - 12:30 PM</p>
+                        <p><strong>Wednesday Service:</strong> 4:00 PM</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="inline-block w-full text-center py-2 bg-purple-900/50 hover:bg-purple-800/60 text-amber-400 text-xs font-semibold rounded-lg border border-purple-700/50 transition">Get Directions</a>
+                </div>
+
+                <!-- Branch 5: Nakuru Branch -->
+                <div class="glass-card p-6 rounded-2xl border border-purple-800/40 relative hover:border-amber-500/50 transition">
+                    <span class="text-[10px] uppercase font-bold text-gray-400 bg-gray-800 px-2.5 py-0.5 rounded-full mb-3 inline-block">Rift Valley</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Nakuru Branch</h3>
+                    <p class="text-xs text-gray-400 mb-4"><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i> Nakuru Town Centre</p>
+                    <div class="space-y-2 text-xs text-gray-300 mb-6">
+                        <p><strong>Sunday Service:</strong> 9:00 AM - 12:30 PM</p>
+                        <p><strong>Wednesday Midweek:</strong> 4:00 PM</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="inline-block w-full text-center py-2 bg-purple-900/50 hover:bg-purple-800/60 text-amber-400 text-xs font-semibold rounded-lg border border-purple-700/50 transition">Get Directions</a>
+                </div>
+
+                <!-- Branch 6: Githurai Branch -->
+                <div class="glass-card p-6 rounded-2xl border border-purple-800/40 relative hover:border-amber-500/50 transition">
+                    <span class="text-[10px] uppercase font-bold text-gray-400 bg-gray-800 px-2.5 py-0.5 rounded-full mb-3 inline-block">Nairobi Suburbs</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Githurai Branch</h3>
+                    <p class="text-xs text-gray-400 mb-4"><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i> Githurai 45, Off Thika Road</p>
+                    <div class="space-y-2 text-xs text-gray-300 mb-6">
+                        <p><strong>Sunday Service:</strong> 8:30 AM - 12:00 PM</p>
+                        <p><strong>Friday Prayer:</strong> 5:00 PM</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="inline-block w-full text-center py-2 bg-purple-900/50 hover:bg-purple-800/60 text-amber-400 text-xs font-semibold rounded-lg border border-purple-700/50 transition">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giving Section -->
+    <section id="giving" class="py-20 bg-gray-950 border-t border-purple-900/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">Support the Ministry</h2>
+            <p class="text-gray-400 mb-10 max-w-xl mx-auto">Partner with us to preach the gospel and expand Sasa TV Network across Kenya and beyond.</p>
+
+            <div class="grid md:grid-cols-2 gap-6 text-left">
+                <!-- Paybill Card -->
+                <div class="glass-card p-6 rounded-2xl border border-purple-800/40">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full">M-Pesa Paybill</span>
+                        <i class="fa-solid fa-mobile-screen-button text-amber-400 text-xl"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-2">Business Number:</p>
+                    <div class="flex items-center justify-between bg-gray-900 px-4 py-3 rounded-xl border border-purple-900/60 mb-3">
+                        <span class="text-2xl font-mono font-bold text-white">727428</span>
+                        <button onclick="copyToClipboard('727428', this)" class="text-xs text-amber-400 hover:underline">Copy</button>
+                    </div>
+                    <p class="text-xs text-gray-400">Account Name: <strong>TITHE / OFFERING</strong></p>
+                </div>
+
+                <!-- Till Card -->
+                <div class="glass-card p-6 rounded-2xl border border-purple-800/40">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full">Buy Goods Till</span>
+                        <i class="fa-solid fa-store text-amber-400 text-xl"></i>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-2">Till Number:</p>
+                    <div class="flex items-center justify-between bg-gray-900 px-4 py-3 rounded-xl border border-purple-900/60 mb-3">
+                        <span class="text-2xl font-mono font-bold text-white">263853</span>
+                        <button onclick="copyToClipboard('263853', this)" class="text-xs text-amber-400 hover:underline">Copy</button>
+                    </div>
+                    <p class="text-xs text-gray-400">Store Name: <strong>NENO EVANGELISM CENTRE</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Prayer / Contact Form -->
+    <section id="prayer" class="py-20 bg-brand-darkPurple relative border-t border-purple-900/30">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-serif font-bold text-white mb-3">Submit Your Prayer Request</h2>
+                <p class="text-purple-200/80">Our prayer team is ready to stand in faith with you.</p>
+            </div>
+
+            <form id="prayer-form" class="bg-brand-purple/60 backdrop-blur-md p-8 rounded-2xl border border-purple-800/40 space-y-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
+                    <input type="text" id="prayer-name" required class="w-full bg-gray-950/60 border border-purple-800/60 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">Phone Number / WhatsApp</label>
+                    <input type="tel" id="prayer-phone" required class="w-full bg-gray-950/60 border border-purple-800/60 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">Prayer Request</label>
+                    <textarea id="prayer-message" rows="4" required class="w-full bg-gray-950/60 border border-purple-800/60 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-brand-darkPurple font-bold py-3.5 rounded-xl transition">
+                    Send Prayer Request via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section (All Saints' Cathedral Inspired Layout) -->
+    <footer class="bg-gray-950 border-t border-purple-900/50 pt-16 pb-8 text-gray-300 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 pb-12 border-b border-purple-900/40">
+                
+                <!-- Column 1: Find Us -->
+                <div class="space-y-4">
+                    <h3 class="text-xl font-serif font-bold text-white tracking-wide border-b border-amber-500/40 pb-2 inline-block">Find Us</h3>
+                    <ul class="space-y-3 text-xs leading-relaxed text-gray-300">
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-location-dot text-amber-400 mt-0.5"></i>
+                            <span>Uhuru Highway & Haile Selassie Ave Junction, Nairobi CBD, Kenya</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-amber-400"></i>
+                            <a href="tel:+254722410381" class="hover:text-amber-300 transition">+254 722 410 381 (Office)</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-headset text-amber-400"></i>
+                            <a href="tel:+254722410381" class="hover:text-amber-300 transition">+254 722 410 381 (Prayer Line)</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-envelope text-amber-400"></i>
+                            <a href="mailto:info@nenoevangelism.org" class="hover:text-amber-300 transition">info@nenoevangelism.org</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="space-y-4">
+                    <h3 class="text-xl font-serif font-bold text-white tracking-wide border-b border-amber-500/40 pb-2 inline-block">Quick Links</h3>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li><a href="#about" class="hover:text-amber-400 transition flex items-center space-x-2"><i class="fa-solid fa-chevron-right text-[10px] text-amber-500"></i><span>About Our Founder</span></a></li>
+                        <li><a href="#sasa-tv" class="hover:text-amber-400 transition flex items-center space-x-2"><i class="fa-solid fa-chevron-right text-[10px] text-amber-500"></i><span>Sasa TV Live Broadcast</span></a></li>
+                        <li><a href="#sermons" class="hover:text-amber-400 transition flex items-center space-x-2"><i class="fa-solid fa-chevron-right text-[10px] text-amber-500"></i><span>Sermons & Media Archive</span></a></li>
+                        <li><a href="#branches" class="hover:text-amber-400 transition flex items-center space-x-2"><i class="fa-solid fa-chevron-right text-[10px] text-amber-500"></i><span>Church Branches Directory</span></a></li>
+                        <li><a href="#prayer" class="hover:text-amber-400 transition flex items-center space-x-2"><i class="fa-solid fa-chevron-right text-[10px] text-amber-500"></i><span>Submit Prayer Request</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Giving & Partnering -->
+                <div class="space-y-4 md:col-span-1 lg:col-span-2">
+                    <h3 class="text-xl font-serif font-bold text-white tracking-wide border-b border-amber-500/40 pb-2 inline-block">Give & Partner</h3>
+                    <div class="grid sm:grid-cols-2 gap-4 text-xs">
+                        <!-- Paybill Box -->
+                        <div class="bg-brand-purple/50 p-4 rounded-xl border border-purple-800/40">
+                            <span class="text-amber-400 font-bold block mb-1">M-Pesa Paybill</span>
+                            <p class="text-gray-200"><strong>Paybill:</strong> 727428</p>
+                            <p class="text-gray-400 text-[11px]"><strong>Account:</strong> TITHE / OFFERING</p>
+                        </div>
+                        <!-- Till Box -->
+                        <div class="bg-brand-purple/50 p-4 rounded-xl border border-purple-800/40">
+                            <span class="text-amber-400 font-bold block mb-1">Buy Goods Till</span>
+                            <p class="text-gray-200"><strong>Till No:</strong> 263853</p>
+                            <p class="text-gray-400 text-[11px]"><strong>Name:</strong> NENO EVANGELISM</p>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <a href="#giving" class="inline-block bg-amber-500 hover:bg-amber-400 text-brand-darkPurple font-bold px-6 py-2.5 rounded-full text-xs shadow-md transition">
+                            Online Giving Portal
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar: Copyright & Social Handles -->
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-gray-400">
+                <p>&copy; 2026 Neno Evangelism Centre & Sasa TV Gospel Network. All rights reserved.</p>
+
+                <!-- Social Handles (All Saints Style Badges) -->
+                <div class="flex items-center space-x-3">
+                    <a href="https://facebook.com" target="_blank" class="w-9 h-9 rounded-full bg-blue-600/20 hover:bg-blue-600 text-blue-400 hover:text-white border border-blue-500/30 flex items-center justify-center transition" title="Facebook">
+                        <i class="fa-brands fa-facebook-f text-sm"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-full bg-pink-600/20 hover:bg-pink-600 text-pink-400 hover:text-white border border-pink-500/30 flex items-center justify-center transition" title="Instagram">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                    <a href="https://x.com" target="_blank" class="w-9 h-9 rounded-full bg-gray-800 hover:bg-black text-gray-300 hover:text-white border border-gray-700 flex items-center justify-center transition" title="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter text-sm"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@sasatvgospel2024" target="_blank" class="w-9 h-9 rounded-full bg-red-600/20 hover:bg-red-600 text-red-400 hover:text-white border border-red-500/30 flex items-center justify-center transition" title="YouTube Sasa TV">
+                        <i class="fa-brands fa-youtube text-sm"></i>
+                    </a>
+                    <a href="https://spotify.com" target="_blank" class="w-9 h-9 rounded-full bg-emerald-600/20 hover:bg-emerald-600 text-emerald-400 hover:text-white border border-emerald-500/30 flex items-center justify-center transition" title="Podcast">
+                        <i class="fa-solid fa-podcast text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Slideshow JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.hero-slide');
+            let currentSlide = 0;
+
+            if (slides.length > 0) {
+                setInterval(() => {
+                    slides[currentSlide].classList.remove('opacity-100');
+                    slides[currentSlide].classList.add('opacity-0');
+
+                    currentSlide = (currentSlide + 1) % slides.length;
+
+                    slides[currentSlide].classList.remove('opacity-0');
+                    slides[currentSlide].classList.add('opacity-100');
+                }, 5000);
+            }
+        });
+    </script>
+
+    <!-- External JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>
